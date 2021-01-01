@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="revenue"
+            type="Integer" />
+
+        <variable
+            name="amountSold"
+            type="Integer" />
+        <variable
+            name="mensa"
+            type="String" />
+    </data>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/teste">
+
+
+        <ImageView
+            android:id="@+id/background_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:scaleType="centerCrop"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@mipmap/lua2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_end_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="0dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_bottom_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="@dimen/default_spacing" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_start_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/default_spacing" />
+
+        <!-- Code for white box at the bottom, using ShapeDrawable defined in the drawable folder -->
+
+
+        <!--        <View-->
+        <!--            android:id="@+id/white_background2"-->
+        <!--            android:layout_width="492dp"-->
+        <!--            android:layout_height="137dp"-->
+        <!--            android:alpha="0.4"-->
+        <!--            android:background="@drawable/teste"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/dessert_button" />-->
+
+        <ImageButton
+            android:id="@+id/dessert_button"
+            android:layout_width="218dp"
+            android:layout_height="217dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/white_background"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.268"
+            tools:src="@mipmap/pipoca5" />
+
+        <View
+            android:id="@+id/white_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.3"
+            android:background="@drawable/teste"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/amount_sold_text"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/cliques"
+            android:layout_width="167dp"
+            android:layout_height="182dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/almendra_display"
+            android:text="ola"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/ic_historico_background"
+            android:textSize="19dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/dessert_sold_text"
+            app:layout_constraintEnd_toStartOf="@+id/mensagem"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/margin_start_guide"
+            app:layout_constraintTop_toBottomOf="@+id/dessert_button"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="GV92" />
+
+        <TextView
+            android:id="@+id/revenue_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almendra_display"
+            android:text='@{"GV" + revenue.toString()}'
+            android:textAllCaps="true"
+            android:textColor="@color/azulbolado"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/margin_bottom_guide"
+            app:layout_constraintEnd_toStartOf="@+id/margin_end_guide"
+            app:layout_constraintStart_toStartOf="@+id/margin_start_guide"
+            tools:text="GV92" />
+
+        <TextView
+            android:id="@+id/dessert_sold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almendra_display"
+            android:text="Numero de Cliques Na Pipoca:"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@color/azulbolado"
+            android:textSize="17dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/amount_sold_text"
+            app:layout_constraintStart_toStartOf="@+id/margin_start_guide" />
+
+        <TextView
+            android:id="@+id/mensagem"
+            android:layout_width="194dp"
+            android:layout_height="196dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/just_me_again_down_here"
+            android:text="@{mensa.toString()}"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/grey"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/dessert_sold_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dessert_button"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/amount_sold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_spacing"
+            android:fontFamily="@font/almendra_display"
+            android:paddingTop="@dimen/default_spacing"
+            android:text="@{amountSold.toString()}"
+            android:textAllCaps="true"
+            android:textColor="@color/azulbolado"
+            android:textSize="36sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/revenue_text"
+            app:layout_constraintEnd_toStartOf="@+id/margin_end_guide"
+            tools:text="12" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

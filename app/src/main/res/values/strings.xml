@@ -1,0 +1,13 @@
+
+
+<resources>
+        <string name="app_name">GoodVibe</string>
+    <string name="dollar_sign">GV</string>
+    <string name="zero">0</string>
+    <string name="dessert_sold">pipoca</string>
+    <string name="share_text"> Ola eu cliquei  %1$d no App GoodVibes e consegui um total de %2$dGV points :D ! , essa foi a minha frase : %3$s  </string>
+    <string name="share">Share</string>
+    <string name="sharing_not_available">Compartilhamento nao abilitado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
