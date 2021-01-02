@@ -2,6 +2,8 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/almendra_display</item>
+        <item>@font/architects_daughter</item>
         <item>@font/just_me_again_down_here</item>
+        <item>@font/titan_one</item>
     </array>
 </resources>

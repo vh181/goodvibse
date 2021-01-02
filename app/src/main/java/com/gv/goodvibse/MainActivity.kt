@@ -50,7 +50,7 @@ private  lateinit var binding : ActivityMainBinding
         Doguinho(R.mipmap.pipoca93, 10, 45,R.mipmap.cb,"BEBA AGUA HUM U.U , melhor ter pedra no caminho do que nos rins vai por mim , sou uma doguinha vivida :D"),
         Doguinho(R.mipmap.pipoca51, 100, 50,R.mipmap.cachoeira,"As vezes erramos a vida é assim mas podemos aprender com nossos erros ou apenas continuar errando "),
         Doguinho(R.mipmap.pipoca88, 10, 55,R.mipmap.kk,"Eu sei que pesa a saudades daqueles que já se foram mas é bom aproveitar aqueles que ficaram tambem :) "),
-        Doguinho(R.mipmap.pipoca53, 150, 60,R.mipmap.gg,"Ao olhar da Pipoca ser Adulto não é uma virada de chave , ser adulto é uma criança que amudereceu porque teve que amuderecer ou uma criança que ainda é uma criança só que com responsabilidades "),
+        Doguinho(R.mipmap.pipoca53, 150, 60,R.mipmap.gg,"Ao olhar da Pipoca ser Adulto não é uma virada de chave , ser adulto é uma criança que amadureceu porque teve que amuderecer ou uma criança que ainda é uma criança só que com responsabilidades "),
         Doguinho(R.mipmap.pipoca89, 10, 65,R.mipmap.qq,"As vezes ficou doida de tanto que eu pulo  haha"),
         Doguinho(R.mipmap.pipoca55, 200, 70,R.mipmap.gatoss,"Sempre que puder olhe as estrelas , você estará conectado com o passado e o futuro"),
 
